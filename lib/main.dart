@@ -1,4 +1,4 @@
-import 'package:firebase_food_delivery/pages/login_page.dart';
+import 'package:firebase_food_delivery/auth/login_or_register.dart';
 import 'package:firebase_food_delivery/theme/theme_providor.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const LoginPage(),
+      home: const LoginOrRegister(),
       theme: Provider.of<ThemeProvider>(context).themeData,
     );
   }
