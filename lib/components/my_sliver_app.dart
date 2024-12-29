@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class MySliverApp extends StatelessWidget {
   final Widget child;
   final Widget title;
-  const MySliverApp({super.key, required this.child, required this. title});
+  const MySliverApp({super.key, required this.child, required this.title});
 
   @override
   Widget build(BuildContext context) {
@@ -14,9 +14,8 @@ class MySliverApp extends StatelessWidget {
       floating: false,
       pinned: true,
       actions: [
-        IconButton(onPressed: () {},
-            icon: const Icon(Icons.shopping_cart)
-        )
+        IconButton(
+            onPressed: () {}, icon: const Icon(Icons.shopping_cart_outlined))
       ],
       backgroundColor: Theme.of(context).colorScheme.surface,
       foregroundColor: Theme.of(context).colorScheme.inversePrimary,
@@ -28,7 +27,7 @@ class MySliverApp extends StatelessWidget {
         ),
         title: title,
         centerTitle: true,
-        titlePadding: const EdgeInsets.only(left: 0, right:0, top: 0),
+        titlePadding: const EdgeInsets.only(left: 0, right: 0, top: 0),
         expandedTitleScale: 1,
       ),
     );
