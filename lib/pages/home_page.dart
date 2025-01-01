@@ -6,6 +6,7 @@ import 'package:firebase_food_delivery/components/my_sliver_app.dart';
 import 'package:firebase_food_delivery/components/my_tab_bar.dart';
 import 'package:firebase_food_delivery/model/food.dart';
 import 'package:firebase_food_delivery/model/restaurant.dart';
+import 'package:firebase_food_delivery/pages/food_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -53,7 +54,12 @@ class _HomePageState extends State<HomePage>
           // return food tile
           return FoodTile(
               food: food,
-              onTap: () {}
+              onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => FoodPage(food: food)
+                  ),
+              ),
           );
         },
       );

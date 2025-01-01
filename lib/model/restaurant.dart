@@ -102,7 +102,7 @@ class Restaurant extends ChangeNotifier{
         name: "Fruit salad",
         description:
         "A handful of strawberries are cut and served with a mixture of fruits and veggies. giving a sweet & sour taste",
-        imagePath: 'lib/images/salads/egg_salad.jpg',
+        imagePath: 'lib/images/salads/fruit_salad.jpg',
         price: 9,
         category: FoodCategory.salads,
         avaliableAddon: [
