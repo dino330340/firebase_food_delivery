@@ -1,6 +1,7 @@
 import 'package:firebase_food_delivery/model/food.dart';
+import 'package:flutter/material.dart';
 
-class Restaurant {
+class Restaurant extends ChangeNotifier{
   // list of food menu
   final List<Food> _menu = [
     // burgers
@@ -155,7 +156,7 @@ class Restaurant {
         name: "CheeseCake",
         description:
         "A cheesecake with vanilla flavoured biscuits and whipped cream",
-        imagePath: 'lib/images/desserts/cheesecake.jpg',
+        imagePath: 'lib/images/desserts/cheescake.jpg',
         price: 10,
         category: FoodCategory.desserts,
         avaliableAddon: [
@@ -289,9 +290,9 @@ class Restaurant {
         name: "Garlic bread",
         description:
         "Cheesy garlic bread sticks.",
-        imagePath: 'lib/images/burgers/classic_burger.jpg',
+        imagePath: 'lib/images/sides/garlic_bread.jpg',
         price: 7,
-        category: FoodCategory.burgers,
+        category: FoodCategory.sides,
         avaliableAddon: []
     ),
     Food(
